@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="static/favicon/favicon.png" type="image/x-icon">
+    <title>Project Calculator</title>
+
+    <link rel="stylesheet" href="static/styles/variable.css">
+    <link rel="stylesheet" href="static/styles/global.css">
+    <link rel="stylesheet" href="static/styles/header.css">
+    <link rel="stylesheet" href="static/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="h-s">
+            Project - Calculator
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="calculator">
+            <form action="javascript:void(0)" name="form" onsubmit="form.answer.value = eval(form.answer.value)">
+                <div class="output-cntnr">
+                    <input id="calc" type="text" name="answer" placeholder="0">
+                </div>
+                <div class="btns-cntnr">
+                    <!--  -->
+                    <button type="button" class="indi-btn" value="%" onclick="form.answer.value += '%'">%</button>
+                    <button type="button" class="indi-btn" value="C" >C</button>
+                    <button type="button" class="indi-btn" value="CE" onclick="form.answer.value = ' ' ">CE</button>
+                    <button type="button" class="indi-btn" value="/" onclick="form.answer.value += '/'">/</button>
+                    <!--  -->
+                    <button type="button" class="indi-btn" value="7" onclick="form.answer.value += '7'">7</button>
+                    <button type="button" class="indi-btn" value="8" onclick="form.answer.value += '8'">8</button>
+                    <button type="button" class="indi-btn" value="9" onclick="form.answer.value += '9'">9</button>
+                    <button type="button" class="indi-btn" value="x" onclick="form.answer.value += '*'">*</button>
+                    <!--  -->
+                    <button type="button" class="indi-btn" value="4" onclick="form.answer.value += '4'">4</button>
+                    <button type="button" class="indi-btn" value="5" onclick="form.answer.value += '5'">5</button>
+                    <button type="button" class="indi-btn" value="5" onclick="form.answer.value += '5'">5</button>
+                    <button type="button" class="indi-btn" value="-" onclick="form.answer.value += '-'">-</button>
+                    <!--  -->
+                    <button type="button" class="indi-btn" value="1" onclick="form.answer.value += '1'">1</button>
+                    <button type="button" class="indi-btn" value="2" onclick="form.answer.value += '2'">2</button>
+                    <button type="button" class="indi-btn" value="3" onclick="form.answer.value += '3'">3</button>
+                    <button type="button" class="indi-btn" value="+" onclick="form.answer.value += '+'">+</button>
+                    <!--  -->
+                    <button type="button" class="indi-btn" value="+-" >+-</button>
+                    <button type="button" class="indi-btn" value="0" onclick="form.answer.value += '0'">0</button>
+                    <button type="button" class="indi-btn" value="." onclick="form.answer.value += '.'">.</button>
+                    <button type="button" class="indi-btn" value="=" onclick="form.answer.value = eval(form.answer.value)">=</button>
+                    <!--  -->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

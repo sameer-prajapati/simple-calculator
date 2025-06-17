@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+    background-color: var(--teal_blue);
+    color: var(--white);
+}
+
+.h-s {
+    padding: 0.6rem; 
+    padding-bottom: 0.8rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    width: fit-content;
+}
